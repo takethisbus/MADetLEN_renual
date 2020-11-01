@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import url("perfume_top.css");
+@import url("bottom.css");
+@import url("login.css");
+
+@keyframes perfume1{
+	0%{letter-spacing:0px;}
+	100%{letter-spacing:80px;}
+}
+
+
+/*전체*/
+body{background-color:#000000;}
+
+#contents_wrap{clear:both;height:1300px;width:100%;
+				font-size:15px;
+				color:#ffffff;
+				position:relative;}
+
+/*우측고정*/
+#contents_wrap .right_fix{position:fixed;
+						top:50%;right:50px;
+						transform:translate(0,-50%);
+						width:60px;height:110px;z-index:50;}
+.right_fix ul{width:100%;height:100%;}
+.right_fix ul li{width:100%;height:55px;
+				text-align:center;
+				line-height:55px;}
+.right_fix ul li a{color:#ffffff;
+					font-size:15px;}
+.right_fix ul li:last-child img{margin-top:15px;}
+
+/*메인*/
+section{width:1085px;height:1547px;
+		margin:0 auto;}
+
+
+/*제목*/
+section h2{font-size:20px;
+				font-weight:normal;
+				line-height:50px;
+				width:380px;height:360px;
+				margin:0 auto 20px auto;
+				position:relative;}
+section h2::after{content:"";position:absolute;
+						top:0;left:0;
+						opacity:0;
+						width:380px;height:360px;
+						transition:all 0.5s ease-in-out;
+						background:url(../images/perfume_tit.png) no-repeat center;}
+section h2:hover::after{opacity:1;
+								top:-50px;left:-200px;}
+section h2 span{display:block;
+						text-indent:15px;
+						width:300px;
+						text-align:center;
+						animation:perfume1 3s infinite alternate;}
+section h2 span:first-child{letter-spacing:80px;}
+section h2 .tit_1{letter-spacing:40px;}
+section h2 .tit_2{letter-spacing:10px;text-align:left;}
+
+/*향수제품*/
+section .product_left{width:180px;height:685px;
+						float:left;}
+.product_left figure{width:100%;height:100%;
+					text-align:center;
+					position:relative;}
+.product_left figure p{width:180px;height:560px;}
+.product_left figure p img{position:absolute;
+							top:0;left:17px;}
+.product_left figure p:hover img{transition:all 3s ease-in-out;
+								left:800px;
+								opacity:0;}
+.product_left figure figcaption a{position:absolute;
+									width:180px;display:block;
+									font-size:15px;
+									color:#ffffff;
+									bottom:0;
+									transition:all 0.3s ease-in-out;}
+.product_left figure figcaption a:hover{font-weight:bold;}
+
+section .product_right{width:745px;height:600px;
+						float:right;
+						padding-top:35px;}
+.product_right h3{float:left;
+				width:115px;height:600px;
+				font-size:25px;
+				line-height:600px;
+				font-weight:normal;}
+.product_right ul{float:right;width:175px;height:600px;}
+/*
+.product_right ul::before{content:"";position:absolute;
+									background:url(../images/spread_circle.png) no-repeat center;
+									width:16px;height:16px;
+									top:285px;left:-250px;}
+.product_right ul:hover::before{opacity:0;}
+*/
+.product_right ul li{height:30px;width:100%;
+					line-height:30px;
+					position:relative;
+					z-index:10;}
+.product_right ul li:first-child::before{content:"";position:absolute;
+									background:url(../images/spread_circle.png) no-repeat center;
+									width:16px;height:16px;
+									top:285px;left:-250px;}
+.product_right ul li:last-child::before{content:"";display:block;
+										opacity:0;
+										position:absolute;
+										top:-450px;;left:-400px;
+										z-index:1;
+										width:340px;height:340px;
+										transition:all 3s ease-out;
+							background:url(../images/spread.gif) no-repeat center;}
+.product_right ul li a{color:#929292;font-size:15px;}
+.product_right ul li:hover ~ :last-child::before{opacity:1;}
+.product_right ul li a:hover{text-decoration:underline;color:#ffffff;}

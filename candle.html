@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MAD et LEN</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<!--[if lt IE 9]>   
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/candle_contents.css">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/top_b.js"></script>
+	<script src="js/candle.js"></script>
+	<script src="js/login.js"></script>
+</head>
+<body>
+	<div class="right_fix">
+			<ul>
+				<li><a href="#" class="login_btn">login</a></li>
+				<li><a href="#"><img src="images/shopping_cart.png" alt="shopping cart" width="27" height="25"></a></li>
+			</ul>
+	</div><!--right_fix-->
+	 <div id="login_w">
+			<div id="login_wrap">    
+			   <div id="cancel_btn">
+                    <svg>
+                        <line class="cancel" x1="0.71" y1="0.71" x2="51.21" y2="51.21"/>
+                        <line class="cancel" x1="49.54" y1="0.71" x2="0.71" y2="49.87"/>
+                    </svg>
+				</div>
+				<h1>Log in</h1>
+				<p id="required">*Required</p>
+				<form action="login.php" method="post" id="login_form">
+					<div id="inp_login">
+						<div class="login_st">
+							<input type="email" id="email_login" autocomplete="off" placeholder="Email*" required>
+							<label for="email_login">email</label>
+						</div><!--login_st-->
+						<div class="login_st">
+							<input type="password" id="pwd_login" autocomplete="off" placeholder="Password*">
+							<label for="pwd_login">Password</label>
+						</div><!--login_st-->
+					</div><!--inp_login-->
+					<div class="link_login">
+						<a href="#">I FORGOT MY PASSWORD</a>
+						<a href="register.html" class="move_register">I DON'T HAVE AN COUNT</a>
+					</div><!--link_login-->
+				<p id="btn_wrap">
+					<button type="submit">LOG IN</button>
+				</p><!--btn_wrap-->
+				</form><!--login_form-->
+			</div><!--login_wrap-->
+		</div><!--login_w-->
+	 <div id="wrap">   
+<!--header-->
+        <header id="top_wrap">
+            <div id="top">
+                <h1>
+                    <a href="index.html"><svg width="147" height="22"><text class="logo" transform="translate(0 17)">MAD et LEN</text></svg></a>
+                </h1>
+                <nav id="menu">
+                    <ul>
+                        <li class="menu_bar"><a href="candle.html"><img src="images/menu_w.png" alt="menu" width="925" height="13"></a>
+                            <ul class="list">
+                                <li><a href="about.html">About</a></li>
+                                <li class="candle"><a href="candle.html">Candle</a></li>
+                                <li><a href="perfume.html">Perfume</a></li>
+                                <li><a href="potpourri.html">Pot Pourri</a></li>
+                                <li><a href="store.html">Store</a></li>
+                            </ul><!--.list-->
+                        </li><!--.menu_bar-->
+                    </ul>
+                </nav><!--menu-->
+                <div id="search_wrap">
+                    <input type="search" placeholder="Search.." id="search" class="search_click">
+                    <label for="search">Search</label>
+                </div><!--search_wrap-->
+            </div><!--top-->
+        </header><!--top_wrap-->
+<!--contents-->
+	<main id="contents_wrap">
+		<h2><span>c</span>a<span>n</span>d<br>l<span>e</span></h2>
+		<div class="candle_product">
+			<figure class="img_move">
+				<img src="images/candle/Small.png" alt="small size candle" width="276" height="226">
+				<button type="button">Add to cart</button>
+				<figcaption><a href="#">Small size candle<br>$95</a></figcaption>
+			</figure>
+			<figure class="center_product img_move">
+				<img src="images/candle/Normal.png" alt="normal size candle" width="294" height="220">
+				<button type="button">Add to cart</button>
+				<figcaption><a href="#">Normal size candle<br>$105</a></figcaption>
+			</figure>
+			<figure>
+				<img src="images/candle/black_monarchia.png" alt="black monarchia candle" width="146" height="240">
+				<button type="button">Add to cart</button>
+				<figcaption><a href="#">Small size candle<br>$95</a></figcaption>
+			</figure>
+			<figure class="bottom_product">
+				<img src="images/candle/Narcotic_vestimentale.png" alt="narcotic vestimentale candle" width="201" height="247">
+				<button type="button">Add to cart</button>
+				<figcaption><a href="#">Narcotic Vestimentale candle<br>$131</a></figcaption>
+			</figure>
+			<figure class="center_product">
+				<img src="images/candle/Fumiste.png" alt="fumiste candle metalic" width="218" height="248">
+				<button type="button">Add to cart</button>
+				<figcaption><a href="#">Fumiste candle -metalic<br>sold out</a></figcaption>
+			</figure>
+			<figure>
+				<img src="images/candle/buddha_paper.png" alt="buddha paper candle" width="224" height="260">
+				<button type="button">Add to cart</button>
+				<figcaption><a href="#">"Buddha paper" candle<br>sold out</a></figcaption>
+			</figure>
+		</div><!--candle_product-->
+	</main><!--contents_wrap-->
+<!--footer-->
+    <footer id="bottom_wrap">
+        <div id="bottom">
+            <div id="bottom_top">
+                <div id="left_footer">
+                    <nav class="footer_menu">
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="candle.html">Candle</a></li>
+                            <li><a href="perfume.html">Perfume</a></li>
+                            <li><a href="potpourri.html">Pot pourri</a></li>
+                            <li><a href="store.html">Store</a></li>
+                        </ul>
+                    </nav>
+                </div><!--left_footer-->
+                <div id="center_contents">
+                    <h3>RECIEVE<br>LETTER<br>:</h3>
+                    <div id="sns_wrap">
+                        <a href="https://www.instagram.com/madetlen/?hl=ko" target="_blank"><img src="images/instagram_w.png" alt="instagram" width="22" height="22"></a>
+                        <a href="https://www.facebook.com/MADetLEN" target="_blank"><img src="images/facebook_w.png" alt="facebook" width="10" height="20"></a>
+                        <a href="#"><img src="images/mail_w.png" alt="email" width="25" height="15"></a>
+                    </div><!--sns_wrap-->
+                    <p>We will send you information on new products, stock arrivals, campaigns, etc.</p>
+                    <form action="email.php" method="post">
+                        <div class="email_wrap">
+                            <label for="email_add">email</label>
+                            <input type="email" id="email_add" placeholder="Email address">
+                        </div><!--email_wrap-->
+                        <p><button type="submit">SIGN UP</button></p>
+                    </form>
+                </div><!--center_contents-->
+                <div id="right_toplink">
+                    <p><a href="#top">TOP</a></p>
+                </div><!--right_toplink-->
+            </div><!--bottom_top-->
+            <div id="bottom_bottom">
+                <h4><a href="index.html"><svg class="logo_bottom" width="220" height="35"><text class="logo" transform="translate(0 30)">MAD et LEN</text></svg></a></h4>
+                <ul>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">NOTATION</a></li>
+                    <li><a href="#">BASED ON SPECIFIED COMMERCIAL TRANSACTION LAW</a></li>
+                    <li><a href="#">PRIVACY POLICY </a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">ABOUT  RETURNS AND EXCHANGES</a></li>
+                </ul>
+            </div><!--bottom_bottom-->
+        </div><!--bottom-->
+    </footer><!--bottom_wrap-->
+	</div><!--wrap-->
+</body>
+</html>

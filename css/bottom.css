@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+
+/*하단*/
+#bottom_wrap{clear:both;width:100%;min-width:1600px;}
+#bottom{width:1408px;height:460px;
+        margin:160px auto 0 auto;}
+
+
+/*하단의 상단*/
+#bottom_top{height:165px;width:1192px;
+            margin:0 auto;}
+
+/*하단 상단-왼쪽*/
+#left_footer{float:left;
+            width:85px;height:165px;
+            margin-right:207px;
+			line-height:1.5em;}
+#left_footer .footer_menu{width:85px;height:130px;
+                        padding-top:35px;}
+.footer_menu > ul > li > a{font-size:17px;
+                            color:#656565;}
+.footer_menu > ul > li > a:hover{color:#ffffff;}
+
+/*하단 상단-중앙*/
+#center_contents{float:left;
+                width:742px;height:165px;
+                position:relative;
+                color:#ffffff;}
+
+#center_contents h3{width:94px;height:70px;
+                    font-size:20px;
+                    letter-spacing:2px;}
+
+#center_contents #sns_wrap{width:115px;height:36px;
+                            position:absolute;
+                            top:0;right:0;}
+#center_contents #sns_wrap a{display:block;
+                            width:25px;height:22px;
+                            float:left;
+                            margin-top:14px;
+                            margin-right:20px;
+                            text-align:center;}
+#center_contents #sns_wrap a:last-child{margin-right:0;
+                                        padding-top:4px;
+                                        height:18px;}
+
+#center_contents > p{height:20px;}
+
+#center_contents form{height:42px;width:742px;
+                    padding-top:33px;}
+
+.email_wrap{height:42px;width:600px;float:left;}
+.email_wrap input{height:38px;width:625px;
+                border-radius:0;
+                border:1px solid #000000;
+                text-indent:5px;}
+.email_wrap label{display:none;}
+#center_contents form p{width:116px;height:42px;float:right;}
+#center_contents form p button{width:116px;height:41px;
+                                background:transparent url(../images/sign_up_w.png) no-repeat 100px 25px;
+                                border:none;outline:none;border-radius:0;
+                                border-bottom:1px solid #ffffff;
+                                cursor:pointer;
+                                line-height:63px;
+                                color:#ffffff;}
+#center_contents form p button:hover{font-weight:bold;
+                                    border-width:2px;}
+
+
+
+/*하단 상단-오른쪽*/
+#right_toplink{float:right;
+                width:61px;height:165px;}
+#right_toplink p{width:61px;height:165px;
+                background:url(../images/top_w.png) no-repeat 0 17px;
+                cursor:pointer;
+                position:relative;}
+#right_toplink p a{display:block;
+                    width:61px;height:165px;
+                    line-height:230px;
+                    text-align:center;
+                    color:#a4a4a4;}
+#right_toplink p a:hover{font-weight:bold;color:#ffffff;}
+
+
+/*하단의 하단*/
+#bottom_bottom{clear:both;
+                height:215px;width:1408px;
+                padding-top:85px;}
+#bottom_bottom h4{width:220px;height:35px;
+                margin:0 auto 100px auto;}
+#bottom_bottom h4 .logo_bottom{font-size:36px;
+                                font-family:Bell MT,BellMT,serif;
+                                fill:#ffffff;}
+#bottom_bottom ul{width:1408px;height:80px;}
+#bottom_bottom ul li{float:left;
+                    margin-left:40px;}
+#bottom_bottom ul li:first-child{margin-left:0;}
+#bottom_bottom ul li a{font-size:17px;
+                        color:#a4a4a4;}
+#bottom_bottom ul li a:hover{color:#ffffff;}

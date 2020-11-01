@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MAD et LEN</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<!--[if lt IE 9]>   
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="js/top_b.js"></script>
+	<script src="js/store.js"></script>
+	<script src="js/login.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/store_contents.css">
+</head>
+<body>
+ <div id="wrap">
+ <!--login-->
+	<div id="login_w">
+		<div id="login_wrap">    
+		   <div id="cancel_btn">
+                <svg>
+                    <line class="cancel" x1="0.71" y1="0.71" x2="51.21" y2="51.21"/>
+                    <line class="cancel" x1="49.54" y1="0.71" x2="0.71" y2="49.87"/>
+                </svg>
+			</div>
+			<h1>Log in</h1>
+			<p id="required">*Required</p>
+			<form action="login.php" method="post" id="login_form">
+				<div id="inp_login">
+					<div class="login_st">
+						<input type="email" id="email_login" autocomplete="off" placeholder="Email*" required>
+						<label for="email_login">email</label>
+					</div><!--login_st-->
+					<div class="login_st">
+						<input type="password" id="pwd_login" autocomplete="off" placeholder="Password*">
+						<label for="pwd_login">Password</label>
+					</div><!--login_st-->
+				</div><!--inp_login-->
+				<div class="link_login">
+					<a href="#">I FORGOT MY PASSWORD</a>
+					<a href="register.html" class="move_register">I DON'T HAVE AN COUNT</a>
+				</div><!--link_login-->
+			<p id="btn_wrap">
+				<button type="submit">LOG IN</button>
+			</p><!--btn_wrap-->
+			</form><!--login_form-->
+		</div><!--login_wrap-->
+	</div><!--login_w-->    
+<!--header-->
+ 	<header id="top_wrap">
+		<div id="top">
+			<h1>
+				<a href="index.html"><svg width="147" height="22"><text class="logo" transform="translate(0 17)">MAD et LEN</text></svg></a>
+			</h1>
+			<nav id="menu">
+				<ul>
+					<li class="menu_bar"><a href="candle.html"><img src="images/menu_w.png" alt="menu" width="925" height="13"></a>
+						<ul class="list">
+							<li><a href="about.html">About</a></li>
+							<li><a href="candle.html">Candle</a></li>
+							<li><a href="perfume.html">Perfume</a></li>
+							<li><a href="potpourri.html">Pot Pourri</a></li>
+							<li class="store"><a href="store.html">Store</a></li>
+						</ul><!--.list-->
+					</li><!--.menu_bar-->
+				</ul>
+			</nav><!--menu-->
+			<div id="search_wrap">
+                    <input type="search" placeholder="Search.." id="search" class="search_click">
+                    <label for="search">Search</label>
+            </div><!--search_wrap-->
+		</div><!--top-->
+    </header><!--top_wrap-->
+    <div id="contents_wrap">
+    <!--우측고정-->
+		<div class="right_fix">
+			<ul>
+				<li><a href="#" class="login_btn">login</a></li>
+				<li><a href="#"><img src="images/shopping_cart.png" alt="shopping cart" width="27" height="25"></a></li>
+			</ul>
+		</div><!--right_fix-->
+   		<div id="store_popup">
+   			<div>
+				<h2>Boutique Detail</h2>
+				<div>
+					<h3>MAD et LEN - PARIS</h3>
+					<address>27 Galerie Vivienne, 75002 Paris, France</address>
+				</div>
+				<div>
+					<h3>BUSINESS HOURS</h3>
+					<p>Monday - Friday: 10am - 6pm<br>Break Time 12pm-1pm<br>Sunday Closed</p>
+				</div>
+				<div>
+					<h3>CONTACT</h3>
+					<p>+33 1 81 70 97 24</p>
+				</div>
+				<button type="button" title="Close" class="popup_close">X</button>
+			</div>
+   		</div><!--store_popup-->
+    	<section id="store_contents">
+    		<div class="store_top">
+				<h2>Store List</h2>
+				<div class="select_cc">	
+					<div>
+						<select id="continent">
+							<option>Select a continent</option>
+							<option value="asia">Asia</option>
+							<option value="europe">Europe</option>
+							<option value="northamerica">North America</option>
+						</select>
+						<label for="continent">Select a continent</label>
+					</div>
+					<div>
+						<select id="country">
+							<option>Select a country / regieon</option>
+							<option value="china" class="asia">China</option>
+							<option value="hongkong" class="asia">Hong Kong</option>
+							<option value="japan" class="asia">Japan</option>
+							<option value="france" class="europe">France</option>
+							<option value="germany" class="europe">Germany</option>
+							<option value="italy" class="europe">Italy</option>
+							<option value="usa" class="northamerica">United States</option>
+						</select>
+						<label for="country">Select a continent</label>
+					</div>
+				</div><!--select_cc-->
+				<div class="store_f">Store found <span>1</span></div>
+			</div><!--store_top-->
+   			<div class="store_map">
+   				<iframe src="https://snazzymaps.com/embed/254274" width="1175" height="735" title="map"></iframe>
+   			</div><!--store_map-->
+   			<div class="store_info">
+   				<h3>Store MAD et LEN</h3>
+   				<div>
+					<p>MAD et LEN - Paris</p>
+					<address>
+						27 Galerie Vivienne<br>
+						75002 Paris, France<br>
+						+33 1 81 70 97 24
+					</address>
+				</div>
+   				<ul>
+   					<li><a href="#">View on map</a></li>
+   					<li><a href="#" class="more_detail">More details</a></li>
+   				</ul>
+   			</div><!--store_info-->
+    	</section><!--store_contents-->
+    </div><!--contents_wrap-->
+<!--footer-->
+    <footer id="bottom_wrap">
+        <div id="bottom">
+            <div id="bottom_top">
+                <div id="left_footer">
+                    <nav class="footer_menu">
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="candle.html">Candle</a></li>
+                            <li><a href="perfume.html">Perfume</a></li>
+                            <li><a href="potpourri.html">Pot pourri</a></li>
+                            <li><a href="store.html">Store</a></li>
+                        </ul>
+                    </nav>
+                </div><!--left_footer-->
+                <div id="center_contents">
+                    <h3>RECIEVE<br>LETTER<br>:</h3>
+                    <div id="sns_wrap">
+                        <a href="https://www.instagram.com/madetlen/?hl=ko" target="_blank"><img src="images/instagram_w.png" alt="instagram" width="22" height="22"></a>
+                        <a href="https://www.facebook.com/MADetLEN" target="_blank"><img src="images/facebook_w.png" alt="facebook" width="10" height="20"></a>
+                        <a href="#"><img src="images/mail_w.png" alt="email" width="25" height="15"></a>
+                    </div><!--sns_wrap-->
+                    <p>We will send you information on new products, stock arrivals, campaigns, etc.</p>
+                    <form action="email.php" method="post">
+                        <div class="email_wrap">
+                            <label for="email_add">email</label>
+                            <input type="email" id="email_add" placeholder="Email address">
+                        </div><!--email_wrap-->
+                        <p><button type="submit">SIGN UP</button></p>
+                    </form>
+                </div><!--center_contents-->
+                <div id="right_toplink">
+                    <p><a href="#top">TOP</a></p>
+                </div><!--right_toplink-->
+            </div><!--bottom_top-->
+            <div id="bottom_bottom">
+                <h4><a href="index.html"><svg class="logo_bottom" width="220" height="35"><text class="logo" transform="translate(0 30)">MAD et LEN</text></svg></a></h4>
+                <ul>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">NOTATION</a></li>
+                    <li><a href="#">BASED ON SPECIFIED COMMERCIAL TRANSACTION LAW</a></li>
+                    <li><a href="#">PRIVACY POLICY </a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">ABOUT  RETURNS AND EXCHANGES</a></li>
+                </ul>
+            </div><!--bottom_bottom-->
+        </div><!--bottom-->
+    </footer><!--bottom_wrap-->
+	</div><!--wrap-->
+</body>
+</html>

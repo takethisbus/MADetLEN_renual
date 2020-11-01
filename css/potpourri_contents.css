@@ -1,0 +1,150 @@
+@charset "utf-8";
+@import url("potpourri_top.css");
+@import url("bottom.css");
+@import url("login.css");
+
+@keyframes title_ani{
+	0%{left:-1900px;}
+	100%{left:200px;}
+}
+
+@keyframes title_ani2{
+	0%{top:-1050px;}
+	100%{top:0px;}
+}
+@keyframes title_ani3{
+	0%{left:360px;}
+	100%{left:-1900px;}
+}
+@keyframes title_ani4{
+	0%{top:1200px;}
+	100%{top:-500px;}
+}
+@keyframes title_ani5{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(360deg);}
+}
+@keyframes total_1{
+	0%{left:0;}
+	100%{left:400px;}
+}
+@keyframes total_2{
+	0%{left:0;}
+	100%{left:-350px;}
+}
+
+/*전체*/
+
+body{background-color:#000000;}
+#contents_wrap{clear:both;height:1547px;width:100%;
+				font-size:15px;
+				color:#ffffff;
+				position:relative;}
+
+/*우측고정*/
+#contents_wrap .right_fix{position:fixed;
+						top:50%;right:50px;
+						transform:translate(0,-50%);
+						width:60px;height:110px;z-index:50;}
+.right_fix ul{width:100%;height:100%;}
+.right_fix ul li{width:100%;height:55px;
+				text-align:center;
+				line-height:55px;}
+.right_fix ul li a{color:#ffffff;
+					font-size:15px;}
+.right_fix ul li:last-child img{margin-top:15px;}
+
+/*내용*/
+section{width:1102px;height:1547px;
+		margin:0 auto;}
+section .pot_explain{width:100%;height:130px;
+					padding-top:30px;
+					font-size:15px;
+					color:#929292;
+					line-height:2em;}
+
+section .pot_left{float:left;width:350px;height:1387px;}
+
+
+section .pot_right{float:right;width:360px;height:1387px;text-align:center;}
+
+/*팟푸리 제목*/
+
+section h2{height:256px;font-size:22px;}
+.pot_left h2 span{display:block;position:absolute;
+					top:12px;left:10px;
+					z-index:10000;
+					width:100px;height:25px;
+					background-color:#000000;
+					font-weight:normal;}
+.pot_left h2{position:relative;overflow:hidden;margin-bottom:60px;transition:all 0.5s ease-in-out;
+			background:url(../images/potpourri_title.gif) no-repeat center;}
+
+
+
+/*팟푸리 내용*/
+
+.pot_left ul{height:1070px;width:140px;
+			margin:0 auto;}
+.pot_left ul li{height:200px;text-align:center;
+				position:relative;
+				margin-bottom:12px;}
+.pot_left ul li img{margin:25px auto;transition:all 0.3s ease-in-out;}
+.pot_left ul li img:hover{transform:rotate(360deg);}
+.pot_left ul .natural_stone img{margin:35px auto 25px auto;}
+.pot_left ul li p{position:absolute;
+					bottom:10px;width:140px;
+					text-align:center;
+					font-size:15px;color:#ffffff;
+					transition:all 0.3s ease-in-out;}
+.pot_left ul li p:hover{font-weight:bold;}
+
+/*오일 제목*/
+.pot_right h2{text-align:center;height:190px;width:190px;
+			margin:33px auto 93px auto;
+			position:relative;transition:all 0.5s ease-in-out;}
+.pot_right h2 span{background-color:#000000;
+					position:absolute;
+					transform:rotate(13deg);
+					left:115px;top:7px;
+					z-index:10;}
+.pot_right h2::after{content:"";background:url(../images/oil_title.png) no-repeat center;
+									display:block;
+									position:absolute;
+									width:180px;height:185px;
+									top:5px;left:5px;
+									animation:title_ani5 infinite 30s linear;}
+.pot_left h2{left:0;}
+.pot_right h2{left:0;}
+#pot_contents:hover .pot_left h2{left:400px;transition:all 3s ease-in-out;}
+#pot_contents:hover .pot_right h2{left:-350px;transition:all 3s ease-in-out;}
+
+
+
+/*오일내용*/
+.pot_right figure{height:1070px;width:360px;}
+.pot_right figure img{margin-top:10px;}
+.pot_right figure figcaption{height:740px;width:360px;font-size:15px;
+							line-height:1.2em;}
+.pot_right figure figcaption h3{width:360px;height:20px;font-weight:normal;}
+.pot_right figure figcaption p{height:25px;width:360px;
+								margin-bottom:50px;}
+.pot_right figure figcaption button{height:20px;
+									border:none;outline:none;
+									background-color:transparent;
+									color:#929292;
+									font-size:15px;}
+.pot_right figure figcaption ul{height:600px;width:250px;margin-left:110px;float:left;position:relative;}
+.pot_right figure figcaption ul li{height:30px;line-height:30px;
+									text-align:left;}
+.pot_right figure figcaption ul li a{color:#b6b6b6;}
+.pot_right figure figcaption ul li a:hover{color:#ffffff;}
+.scent_30ml,.scent_50ml{display:none;}
+
+
+.cart_view{width:300px;height:1150px;
+			float:left;
+			margin-top:300px;margin-left:80px;}
+.cart_view div{border:1px solid #eaeaea;width:300px;height:200px;margin-top:10px;}
+
+.cart_view div img{margin-top:20px;}

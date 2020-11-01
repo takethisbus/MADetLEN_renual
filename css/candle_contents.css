@@ -1,0 +1,71 @@
+@charset "utf-8";
+@import url("login.css");
+@import url("candle_top.css");
+@import url("bottom.css");
+
+
+@keyframes candle1{
+	0%{text-indent:0;}
+	100%{text-indent:50px;}
+}
+@keyframes candle2{
+	0%{text-indent:0;}
+	100%{text-indent:-30px;}
+}
+#contents_wrap{clear:both;height:1547px;width:100%;min-width:1600px;
+				font-size:15px;
+				color:#ffffff;
+				position:relative;}
+/*제목*/
+#contents_wrap h2{font-size:20px;
+				font-weight:normal;
+				line-height:60px;
+				width:28px;height:360px;
+				margin:10px auto 40px auto;}
+#contents_wrap h2 span{display:block;
+						transition:all 5s ease-in-out;
+						text-indent:15px;
+						animation:candle1 5s infinite ease-in-out;}
+#contents_wrap h2 span:first-child{text-indent:10px;
+									animation:candle2 5s infinite ease-in-out;}
+
+
+
+
+/*제품*/
+#contents_wrap .candle_product{width:1123px;height:1137px;
+								margin:0 auto;}
+.candle_product figure{float:left;
+						width:300px;height:375px;
+						text-align:center;
+						margin-bottom:165px;
+						position:relative;}
+.candle_product .bottom_product{clear:both;
+								float:left;}
+.candle_product .center_product{margin:0 111.5px;}
+.candle_product .img_move img{margin-top:10px;padding-left:60px;}
+.candle_product .center_product img{margin-top:20px;}
+.candle_product figure figcaption{position:absolute;width:300px;
+									bottom:30px;left:50%;
+									transform:translate(-50%,0);}
+.candle_product figure button{position:absolute;
+								top:80px;left:100px;
+								width:100px;height:100px;
+								border:none;
+								border-radius:50%;
+								outline:none;
+								color:#ffffff;
+								cursor:pointer;
+								text-align:center;
+								opacity:0;box-shadow:0 0 50px 50px #000000;
+								background:#000000;
+								transition:all 0.3s ease-in;z-index:100;}
+
+
+.candle_product figure:hover button{opacity:1;}
+.candle_product figure figcaption a{font-size:15px;
+									color:#ffffff;
+									line-height:1.5em;}
+.candle_product figure figcaption:hover a{font-weight:bold;}
+
+
